@@ -1,0 +1,24 @@
+#identication
+POST http://localhost:8080/auth/register
+Content-Type: application/json
+Authorization: Bearer d0b0191b7d53c8ee78087c8c447444c950b4b2b694dd293c46946faf80a60048c95314bb16293e9a31539d5ea8f07f25b17776e1165a10583513ab42cdf80c6f8c2f1a87379a878178b44b7f7047244392d70597804e352061d39251e83fe9f02da6d786d6b55f36a2abcc86c36a8818356aacb70e76d5c2032ade7ae67d4cde
+
+{
+    "usename": "chanaphol",
+    "email"  : "chanaphol@gmail.com",
+    "password": "3y@p@ssword"
+}
+
+
+
+
+
+
+#Authentication(login)
+POST http://localhost:8080/auth/local
+Content-Type: application/json
+
+{
+    "identifier": "chanaphol",
+    "password": "3y@p@ssword"
+}
