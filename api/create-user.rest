@@ -1,24 +1,8 @@
-#identication
-POST http://localhost:8080/auth/register
-Content-Type: application/json
-Authorization: Bearer d0b0191b7d53c8ee78087c8c447444c950b4b2b694dd293c46946faf80a60048c95314bb16293e9a31539d5ea8f07f25b17776e1165a10583513ab42cdf80c6f8c2f1a87379a878178b44b7f7047244392d70597804e352061d39251e83fe9f02da6d786d6b55f36a2abcc86c36a8818356aacb70e76d5c2032ade7ae67d4cde
-
-{
-    "usename": "chanaphol",
-    "email"  : "chanaphol@gmail.com",
-    "password": "3y@p@ssword"
-}
-
-
-
-
-
-
-#Authentication(login)
-POST http://localhost:8080/auth/local
-Content-Type: application/json
-
-{
-    "identifier": "chanaphol",
-    "password": "3y@p@ssword"
-}
+curl      -X POST http://localhost:8080/api/auth/local/register
+     -H "Content-Type: application/json"
+     -H "Authorization: Bearer 015c280149e9da1f1b94159071f4fede08f37b250a24cc5068da7cfe33b2f8d5217f6e044ee0e396cef4ab26b75a5f67c6735f401afb010aca1974659ab453f3ff74e2bc13112840908c34024e12082b9d5607ec6d4c7b971b8c0063a87ad1ac267d99ac264595aa4ec6072c256f60ce53af8444cf2f1eb7bd4f3ff1f26961be "
+      -d '{
+          "username": "Chanaphol",
+          "email": "chanaponsrihata@gmail.com",
+          "password": "0957097888ohm"
+     }
